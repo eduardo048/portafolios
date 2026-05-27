@@ -1,15 +1,46 @@
-# Portfolio de Eduardo Picornell Torres
+# Portfolio | Eduardo Picornell Torres
 
-Portfolio profesional estático preparado para publicarse en GitHub Pages.
+Portfolio profesional desarrollado como sitio web estático para presentar mi perfil técnico, tecnologías principales, proyectos destacados y vías de contacto.
 
-## Archivos principales
+El proyecto está preparado para publicarse en **GitHub Pages** y funcionar sin backend ni proceso de build obligatorio.
 
-- `index.html`: estructura y contenido de la página.
-- `styles.css`: estilos responsive.
-- `script.js`: navegación, menú móvil y animaciones.
-- `.nojekyll`: indica a GitHub Pages que sirva la web como archivos estáticos normales.
+## Vista general
 
-## Probar en local
+- Diseño responsive para escritorio, tablet y móvil.
+- Navegación con scroll suave.
+- Secciones de presentación, perfil, tecnologías, proyectos y contacto.
+- Tarjetas de proyectos con imágenes reales extraídas de los propios repositorios.
+- Enlaces directos a GitHub, LinkedIn y correo electrónico.
+- Estructura simple y fácil de mantener.
+
+## Tecnologías
+
+- HTML5
+- CSS3
+- JavaScript
+- Git y GitHub
+- GitHub Pages
+
+## Estructura del proyecto
+
+```text
+.
++-- assets/
+|   +-- projects/
++-- index.html
++-- styles.css
++-- script.js
++-- package.json
++-- package-lock.json
++-- .gitignore
++-- README.md
+```
+
+## Ejecución local
+
+Puedes abrir directamente `index.html` en el navegador o levantar un servidor local.
+
+Con Python:
 
 ```bash
 python -m http.server 3000
@@ -21,39 +52,30 @@ Después abre:
 http://localhost:3000
 ```
 
-También puedes usar:
+También puedes usar el script definido en `package.json`:
 
 ```bash
 npm run dev
 ```
 
-## Subir a GitHub
+## Publicación en GitHub Pages
 
-```bash
-git init
-git add .
-git commit -m "Portfolio inicial"
-git branch -M main
-git remote add origin https://github.com/eduardo048/TU_REPOSITORIO.git
-git push -u origin main
-```
+1. Sube el proyecto a un repositorio de GitHub.
+2. Entra en `Settings`.
+3. Abre la sección `Pages`.
+4. En `Build and deployment`, selecciona `Deploy from a branch`.
+5. Elige la rama `main`.
+6. Selecciona la carpeta `/root`.
+7. Guarda los cambios.
 
-Cambia `TU_REPOSITORIO` por el nombre real del repositorio que crees en GitHub.
-
-## Publicar con GitHub Pages
-
-1. Entra en tu repositorio de GitHub.
-2. Abre `Settings`.
-3. Entra en `Pages`.
-4. En `Build and deployment`, elige `Deploy from a branch`.
-5. Branch: `main`.
-6. Folder: `/root`.
-7. Pulsa `Save`.
-
-GitHub publicará la web en una URL parecida a:
+La web quedará disponible en una URL similar a:
 
 ```text
-https://eduardo048.github.io/TU_REPOSITORIO/
+https://eduardo048.github.io/portafolios/
 ```
 
-Cada vez que hagas `git push`, GitHub Pages actualizará la web.
+## Contacto
+
+- GitHub: [eduardo048](https://github.com/eduardo048)
+- LinkedIn: [Eduardo Picornell Torres](https://www.linkedin.com/in/eduardo-picornell-torres-53134440a)
+- Email: [eduardoedu0012@gmail.com](mailto:eduardoedu0012@gmail.com)

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de Eduardo Picornell Torres, desarrollador backend Java enfocado en bases de datos SQL, Oracle y soluciones de software prácticas.">
+    <meta name="theme-color" content="#090D16">
+    <meta property="og:title" content="Eduardo Picornell Torres | Desarrollador Backend Java">
+    <meta property="og:description" content="Portfolio profesional de Eduardo Picornell Torres: Java, SQL, Oracle, Kotlin, .NET y desarrollo de software.">
+    <meta property="og:type" content="website">
+    <title>Eduardo Picornell Torres | Desarrollador Backend Java</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23090D16%22/%3E%3Ctext x=%2250%22 y=%2264%22 text-anchor=%22middle%22 font-size=%2252%22 fill=%22%2360A5FA%22 font-family=%22Arial%22 font-weight=%22bold%22%3EEPT%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <header class="header" id="main-header">
+        <div class="container">
+            <a href="#inicio" class="logo" id="nav-logo" aria-label="Ir al inicio">
+                EP<span>T</span>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu-list">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-container" aria-label="Navegación principal">
+                <ul class="nav-menu" id="nav-menu-list">
+                    <li><a href="#inicio" class="nav-link active" id="link-inicio" aria-current="page">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link" id="link-sobre-mi">Sobre mí</a></li>
+                    <li><a href="#tecnologias" class="nav-link" id="link-tecnologias">Tecnologías</a></li>
+                    <li><a href="#proyectos" class="nav-link" id="link-proyectos">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link" id="link-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-tag">Desarrollador Backend</div>
+                        <h1 class="hero-name">Eduardo Picornell Torres</h1>
+                        <div class="hero-tech-stack" aria-label="Stack técnico principal">
+                            Java <span>&middot;</span> SQL <span>&middot;</span> Oracle <span>&middot;</span> Kotlin <span>&middot;</span> TypeScript <span>&middot;</span> Python
+                        </div>
+
+                        <p class="hero-desc">
+                            Perfil técnico orientado al desarrollo backend, la gestión de datos relacionales y la construcción de aplicaciones claras, mantenibles y útiles.
+                        </p>
+
+                        <div class="hero-highlights" aria-label="Puntos fuertes">
+                            <div class="hero-highlight">
+                                <strong>Backend</strong>
+                                <span>Java, APIs y lógica de negocio</span>
+                            </div>
+                            <div class="hero-highlight">
+                                <strong>Datos</strong>
+                                <span>SQL, Oracle y PL/SQL</span>
+                            </div>
+                            <div class="hero-highlight">
+                                <strong>Entrega</strong>
+                                <span>Git, GitHub y despliegue web</span>
+                            </div>
+                        </div>
+
+                        <div class="cta-group">
+                            <a href="#contacto" class="btn btn-primary" id="cta-contact">
+                                <span>Contactar</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </a>
+                            <a href="#proyectos" class="btn btn-secondary" id="cta-projects">
+                                <span>Ver proyectos</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal" aria-label="Vista visual de perfil backend">
+                        <div class="hero-visual-card">
+                            <div class="card-dots" aria-hidden="true">
+                                <span class="card-dot"></span>
+                                <span class="card-dot"></span>
+                                <span class="card-dot"></span>
+                            </div>
+                            <div class="code-line" style="animation-delay: 0.2s;"><span class="code-keyword">package</span> com.eduardo.portfolio;</div>
+                            <div class="code-line" style="animation-delay: 0.4s;"><span class="code-keyword">public class</span> <span class="code-class">BackendProfile</span> {</div>
+                            <div class="code-line" style="animation-delay: 0.6s; margin-left: 1.5rem;"><span class="code-keyword">private final</span> String role = <span class="code-string">"Java Backend Developer"</span>;</div>
+                            <div class="code-line" style="animation-delay: 0.8s; margin-left: 1.5rem;"><span class="code-keyword">private final</span> String[] stack = {<span class="code-string">"Java"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"React"</span>};</div>
+                            <div class="code-line" style="animation-delay: 1.0s; margin-left: 1.5rem;"><span class="code-keyword">public</span> Solution build() {</div>
+                            <div class="code-line" style="animation-delay: 1.2s; margin-left: 3rem;"><span class="code-keyword">return</span> Solution.clean()</div>
+                            <div class="code-line" style="animation-delay: 1.4s; margin-left: 4.5rem;">.withReliableData()</div>
+                            <div class="code-line" style="animation-delay: 1.6s; margin-left: 4.5rem;">.readyToDeploy();</div>
+                            <div class="code-line" style="animation-delay: 1.8s; margin-left: 1.5rem;">}</div>
+                            <div class="code-line" style="animation-delay: 2.0s;">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="sobre-mi">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Conóceme</span>
+                    <h3 class="section-title">Sobre mí</h3>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal delay-1">
+                        <p class="about-paragraph">
+                            Me gusta desarrollar software con una base sólida: código ordenado, modelos de datos bien pensados y soluciones que sean fáciles de mantener cuando el proyecto crece.
+                        </p>
+                        <p class="about-paragraph">
+                            Trabajo especialmente con Java y bases de datos relacionales. También tengo experiencia práctica con desarrollo web, Kotlin, .NET, control de versiones y plataformas como ThingsBoard para proyectos orientados a IoT.
+                        </p>
+                    </div>
+
+                    <div class="about-features reveal delay-2">
+                        <article class="about-feature-card">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                            <h4 class="about-feature-title">Desarrollo robusto</h4>
+                            <p class="about-feature-desc">Aplicaciones Java con programación orientada a objetos, separación de responsabilidades y estructura clara.</p>
+                        </article>
+
+                        <article class="about-feature-card">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                            </div>
+                            <h4 class="about-feature-title">Bases de datos SQL</h4>
+                            <p class="about-feature-desc">Diseño relacional, consultas, procedimientos, funciones, triggers y trabajo con Oracle.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tecnologias">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Mi stack técnico</span>
+                    <h3 class="section-title">Tecnologías</h3>
+                </div>
+
+                <div class="tech-grid reveal delay-1">
+                    <article class="tech-card" id="tech-java">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                        </div>
+                        <span class="tech-name">Java</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-sql">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                        </div>
+                        <span class="tech-name">SQL</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-plsql">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path><path d="M12 9l-4 2 4 2 4-2-4-2z" fill="currentColor" opacity="0.2"></path></svg>
+                        </div>
+                        <span class="tech-name">PL/SQL</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-git">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 15V9a4 4 0 0 0-4-4H9"></path><line x1="6" y1="9" x2="6" y2="15"></line></svg>
+                        </div>
+                        <span class="tech-name">Git</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-github">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </div>
+                        <span class="tech-name">GitHub</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-kotlin">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2h20L2 22V2z"></path><path d="M2 12h10L2 2v10z" fill="currentColor" opacity="0.2"></path></svg>
+                        </div>
+                        <span class="tech-name">Kotlin</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-html">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <span class="tech-name">HTML5</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-css">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <span class="tech-name">CSS3</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-js">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18H8v-4h8v4z"></path><path d="M12 2v20"></path></svg>
+                        </div>
+                        <span class="tech-name">JavaScript</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-typescript">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 8h8"></path><path d="M12 8v8"></path><path d="M16 13c0-1.1-.9-2-2-2h-1a2 2 0 0 0 0 4h1a2 2 0 0 1 0 4h-2"></path></svg>
+                        </div>
+                        <span class="tech-name">TypeScript</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-python">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9H8.5A3.5 3.5 0 0 0 5 12.5V15h7"></path><path d="M12 15h3.5A3.5 3.5 0 0 0 19 11.5V9h-7"></path><path d="M8 5h8a3 3 0 0 1 3 3v1h-7"></path><path d="M16 19H8a3 3 0 0 1-3-3v-1h7"></path><circle cx="9" cy="7" r=".5" fill="currentColor"></circle><circle cx="15" cy="17" r=".5" fill="currentColor"></circle></svg>
+                        </div>
+                        <span class="tech-name">Python</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-c">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6.5v11L12 22l8-4.5v-11L12 2z"></path><path d="M15.5 9.5a4 4 0 1 0 0 5"></path></svg>
+                        </div>
+                        <span class="tech-name">C</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-dotnet">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a3.5 3.5 0 1 1 3.5-3.5 3.5 3.5 0 0 1-3.5 3.5z"></path></svg>
+                        </div>
+                        <span class="tech-name">.NET</span>
+                    </article>
+
+                    <article class="tech-card" id="tech-thingsboard">
+                        <div class="tech-icon-wrapper" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+                        </div>
+                        <span class="tech-name">ThingsBoard</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="proyectos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Trabajos recientes</span>
+                    <h3 class="section-title">Proyectos destacados</h3>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal" id="project-actualizateia">
+                        <div class="project-header-visual">
+                            <img src="assets/projects/actualizateia-hero.jpg" alt="Vista de analítica para ActualizateIA" class="project-image" loading="lazy">
+                            <span class="project-header-badge">Web & IA</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">ActualizateIA</h4>
+                            <p class="project-desc">
+                                Sitio web con frontend en JavaScript, panel de administración, contenido editable, testimonios, formulario de contacto y funciones API.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-link">JavaScript &middot; Python API &middot; Web</span>
+                                <a href="https://github.com/eduardo048/ActualizateIA" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="Ver repositorio ActualizateIA">
+                                    Código
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-1" id="project-java-poo">
+                        <div class="project-header-visual">
+                            <img src="assets/projects/gestionzoo-tigre.jpg" alt="Imagen de tigre usada en GestionZoo" class="project-image" loading="lazy">
+                            <span class="project-header-badge">Java & OOP</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">GestionZoo</h4>
+                            <p class="project-desc">
+                                Aplicación Java para gestión de un zoológico, con modelos de animales, personal, visitas, vehículos, ficheros y conexión a base de datos.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-link">Java &middot; Swing &middot; OOP</span>
+                                <a href="https://github.com/eduardo048/GestionZoo" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="Ver repositorio GestionZoo">
+                                    Código
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-2" id="project-db-sql">
+                        <div class="project-header-visual">
+                            <img src="assets/projects/appfilter-login.png" alt="Imagen visual del proyecto AppFilter" class="project-image" loading="lazy">
+                            <span class="project-header-badge">Java & Oracle</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">AppFilter</h4>
+                            <p class="project-desc">
+                                Aplicación de escritorio en Java con login, gestión de empresas y operaciones de alta, modificación, eliminación y consulta conectadas a base de datos.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-link">Java &middot; Oracle JDBC &middot; Swing</span>
+                                <a href="https://github.com/eduardo048/AppFilter" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="Ver repositorio AppFilter">
+                                    Código
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" id="project-android-kotlin">
+                        <div class="project-header-visual">
+                            <img src="assets/projects/brinted-splash.png" alt="Pantalla de carga de Brinted" class="project-image" loading="lazy">
+                            <span class="project-header-badge">Android & Compose</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Brinted</h4>
+                            <p class="project-desc">
+                                Aplicación Android en Kotlin con navegación, pantallas de autenticación, modelos de datos y conexión con servicios externos.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-link">Kotlin &middot; Android &middot; API</span>
+                                <a href="https://github.com/eduardo048/BrintedTrabajoOriginal" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="Ver repositorio Brinted">
+                                    Código
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-1" id="project-antimo">
+                        <div class="project-header-visual">
+                            <img src="assets/projects/antimo-splash.png" alt="Pantalla de carga de AntiMo" class="project-image" loading="lazy">
+                            <span class="project-header-badge">TypeScript</span>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">AntiMo</h4>
+                            <p class="project-desc">
+                                Proyecto TypeScript con estructura web/mobile, componentes de interfaz y configuración Android mediante Capacitor.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-link">TypeScript &middot; HTML &middot; SCSS</span>
+                                <a href="https://github.com/eduardo048/AntiMo" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="Ver repositorio AntiMo">
+                                    Código
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacto">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Hablemos</span>
+                    <h3 class="section-title">Contacto</h3>
+                </div>
+
+                <div class="contact-card reveal">
+                    <p class="contact-desc">
+                        Estoy abierto a colaborar en proyectos, prácticas y oportunidades relacionadas con desarrollo backend y soluciones software.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:eduardoedu0012@gmail.com" class="contact-btn primary" id="contact-email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            Email
+                        </a>
+
+                        <a href="https://github.com/eduardo048" target="_blank" rel="noopener noreferrer" class="contact-btn" id="contact-github">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/eduardo-picornell-torres-53134440a" target="_blank" rel="noopener noreferrer" class="contact-btn" id="contact-linkedin">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-credit">
+                &copy; 2026 Eduardo Picornell Torres. Portfolio desarrollado con HTML, CSS y JavaScript.
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Eduardo Picornell Torres",
+            "jobTitle": "Desarrollador Backend Java",
+            "email": "mailto:eduardoedu0012@gmail.com",
+            "sameAs": [
+                "https://github.com/eduardo048",
+                "https://www.linkedin.com/in/eduardo-picornell-torres-53134440a"
+            ],
+            "knowsAbout": ["Java", "SQL", "Oracle", "PL/SQL", "Kotlin", "JavaScript", "TypeScript", "Python", "C", ".NET", "GitHub", "ThingsBoard"]
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

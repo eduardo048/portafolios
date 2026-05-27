@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-eduardo-picornell",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio profesional de Eduardo Picornell Torres.",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "check": "node scripts/check-static.js"
+  }
+}

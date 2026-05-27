@@ -38,6 +38,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
+    overflow-x: clip;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
     color: var(--color-text-primary);
     font-family: var(--font-sans);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: clip;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -104,6 +105,7 @@ button {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 2rem;
+    min-width: 0;
 }
 
 .header {
@@ -250,12 +252,15 @@ button {
     grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
     gap: 4rem;
     align-items: center;
+    width: 100%;
+    min-width: 0;
 }
 
 .hero-content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    min-width: 0;
 }
 
 .hero-tag {
@@ -405,11 +410,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 0;
+    width: 100%;
 }
 
 .hero-visual-card {
     width: 100%;
     max-width: 520px;
+    min-width: 0;
     padding: 1.35rem;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
@@ -510,12 +518,14 @@ button {
     grid-template-columns: minmax(0, 1fr) minmax(320px, 1.05fr);
     gap: 3rem;
     align-items: center;
+    min-width: 0;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    min-width: 0;
 }
 
 .about-paragraph {
@@ -616,6 +626,7 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 1.25rem;
+    min-width: 0;
 }
 
 .project-card {
@@ -623,6 +634,7 @@ button {
     flex-direction: column;
     overflow: hidden;
     transition: var(--transition-smooth);
+    min-width: 0;
 }
 
 .project-header-visual {
@@ -712,6 +724,8 @@ button {
     font-size: 0.8rem;
     font-weight: 800;
     line-height: 1.4;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .project-repo-link {
@@ -871,7 +885,7 @@ button {
     .nav-menu {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: min(82vw, 320px);
         height: 100vh;
         align-items: flex-start;
@@ -882,11 +896,12 @@ button {
         border-left: 1px solid var(--color-border);
         background: rgba(255, 255, 255, 0.98);
         box-shadow: var(--shadow-lg);
-        transition: right var(--transition-smooth);
+        transform: translateX(100%);
+        transition: transform var(--transition-smooth);
     }
 
     .nav-menu.active {
-        right: 0;
+        transform: translateX(0);
     }
 
     .nav-link {
@@ -900,12 +915,21 @@ button {
 }
 
 @media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
     .hero {
         padding: 100px 0 58px;
     }
 
     .hero-name {
-        font-size: clamp(2.35rem, 15vw, 3.4rem);
+        font-size: clamp(2.1rem, 13vw, 3.2rem);
+        letter-spacing: -0.035em;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
     }
 
     .hero-highlights {
@@ -922,9 +946,31 @@ button {
         justify-content: center;
     }
 
+    .hero-visual-card {
+        overflow-x: hidden;
+    }
+
+    .code-line {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0 !important;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
     .about-features,
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tech-card {
+        min-height: 122px;
+        padding: 1rem 0.75rem;
     }
 
     .project-footer {
@@ -938,6 +984,51 @@ button {
 
     .contact-links {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        min-width: 0;
+    }
+
+    .container {
+        padding: 0 0.85rem;
+    }
+
+    .hero {
+        padding-top: 92px;
+    }
+
+    .hero-name {
+        font-size: clamp(1.95rem, 12vw, 2.55rem);
+    }
+
+    .hero-tag,
+    .section-subtitle {
+        letter-spacing: 0.09em;
+    }
+
+    .hero-tech-stack {
+        font-size: 0.78rem;
+        padding: 0.6rem 0.7rem;
+    }
+
+    .hero-visual-card {
+        padding: 1rem;
+        font-size: 0.72rem;
+    }
+
+    .section {
+        padding: 64px 0;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem 0.95rem;
     }
 }
 
